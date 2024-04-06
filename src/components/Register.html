@@ -1,0 +1,65 @@
+<style>
+    .gradient-custom {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+
+</style>
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
+                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+  
+                <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typeEmailX">Username</label>
+                   <input ng-model="username" type="text" id="typeEmailX" class="form-control form-control-lg" />
+                   <span class="text-danger">{{ errorMsg.errorUsername }}</span>
+                  
+                </div>
+  
+                <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typePasswordX">Password</label>
+                  <input ng-model="password"  type="password" id="typePasswordX" class="form-control form-control-lg" />
+                  <span class="text-danger" style="text-align: start;">{{ errorMsg.errorPassword }}</span>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typePasswordX">Phone</label>
+                  <input ng-model="phone"  type="tel" id="typePasswordX" class="form-control form-control-lg" />
+                  <span class="text-danger">{{ errorMsg.errorPhone }}</span>
+                </div>
+                <div class="form-outline form-white mb-4">
+                    <label class="form-label" for="typePasswordX">Address</label>
+                  <input ng-model="address"  type="text" id="typePasswordX" class="form-control form-control-lg" />
+                  <span class="text-danger">{{ errorMsg.errorAddress }}</span>
+                </div>
+
+              
+  
+                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+  
+                <button ng-click="handleSignUp()" class="btn btn-outline-light btn-lg px-5" type="button">SignUp</button>
+                <div class="alert alert-danger mt-3" ng-show="loginError">{{ signupSuccess }}</div>
+                <div class="alert alert-success mt-3" ng-show="loginSuccess">{{ signupError }}</div>
+              </div>
+  
+              <div>
+                <p class="mb-0">Don't have an account? <a href="#!/login" class="text-white-50 fw-bold">Login</a>
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

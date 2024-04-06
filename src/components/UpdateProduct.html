@@ -1,0 +1,111 @@
+<div class="container-fluid" style="padding-left: 0 !important; padding-right: 0 !important;">
+    <header class="w-100"> <img src="./dist/img/banner00.jpg" style="width: 100%; height: 300px;" alt=""></header>
+   </div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Wedside Book Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!/list-all">Manager Product</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+        <a href="#!/login" ng-if="!checkUserLogin()"><button class="btn btn-outline-success ">
+            Login
+          </button></a>
+          <a ng-show="checkUserLogin()"><button class="btn btn-outline-success ">
+               Xin Chào: {{ username }}
+          </button></a>
+          <a ng-click="logout()" ng-show="checkUserLogin()"><button class="btn btn-outline-secondary mx-2 ">
+               Logout
+       </button></a>
+  
+        <a href="#!/register" ng-if="!checkUserLogin()" class="btn btn-outline-warning mx-3">
+     Register
+        </a>
+  
+  
+       
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container">
+    
+    <div class="card mt-3">
+        <h2 class="text-center mt-2">Update Product</h2>
+        <div class="card-body d-flex justify-content-center">
+            <form action="" class="w-50" ng-submit="handleUpdate($event)" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <label class="mb-2" for="">Name Book</label>
+                        <input type="text" class="form-control" ng-model="name">
+                        <span class="text-danger">{{ errorMsg.errorTen }}</span>
+                    </div>
+    
+                    <div class="col-12 mt-2">
+                        <label class="mb-2" for="">Price Book</label>
+                        <input type="text" class="form-control" ng-model="price">
+                        <span class="text-danger">{{ errorMsg.errorGia }}</span>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <label class="mb-2" for="">Quantity</label>
+                        <input type="number" class="form-control" ng-model="quantity">
+                        <span class="text-danger">{{ errorMsg.errorSoluong }}</span>
+                      </div>
+                    <div class="col-12 mt-2">
+                        <label class="mb-2" for="">Image Book</label>
+                        <input type="file" class="form-control" ng-model="image" ngf-select ngf-change="onChangefile($file)"  accept="image/*">
+                    </div>
+                    <div class="col-12 mt-2 mt-2 mb-2 mx-3"
+                        style="width: 300px; height: 200px; object-fit: cover;">
+                        <figure class="figure">
+                            <span ng-if="imageSrc">
+                                <img ng-src="{{ imageSrc }}" class="figure-img img-fluid rounded"
+                                    alt="Please upload image" style="width: 300px; height: 200px; object-fit: cover;">
+                            </span>
+                            <span ng-if="!imageSrc">
+                                <img src="../../src/dist/img/{{ image }}" class="figure-img img-fluid rounded"
+                                alt="Please upload image" style="width: 300px; height: 200px; object-fit: cover;">
+                            </span>
+                            
+                        </figure>
+                    </div>
+    
+                    <div class="col-12 mt-2">
+                        <label class="mb-2" for="">Description</label>
+                        <textarea ng-model="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <span class="text-danger">{{ errorMsg.errorMota }}</span>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <a href="#!/list-all"><button class="btn btn-warning">Back to home</button></a>
+                        <button type="submit" class="btn btn-outline-success">Update</button>
+                    </div>
+                </div>
+            </form>
+    
+        </div>
+    
+    
+    </div>
+</div>

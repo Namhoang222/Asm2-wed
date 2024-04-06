@@ -1,0 +1,105 @@
+
+<div class="container-fluid" style="padding-left: 0 !important; padding-right: 0 !important;">
+  <header class="w-100"> <img src="./dist/img/banner00.jpg" style="width: 100%; height: 300px;" alt=""></header>
+ </div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Wedside Book Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Admin
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+            <li><a class="dropdown-item" href="#!/list-all">Manager Product</a></li>
+            <li><a class="dropdown-item" href="#!/manager-oder">Manager Order</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+      <a href="#!/login" ng-if="!checkUserLogin()"><button class="btn btn-outline-success ">
+          Login
+        </button></a>
+        <a ng-show="checkUserLogin()"><button class="btn btn-outline-success ">
+             Xin Chào: {{ username }}
+        </button></a>
+        <a ng-click="logout()" ng-show="checkUserLogin()"><button class="btn btn-outline-secondary mx-2 ">
+             Logout
+     </button></a>
+
+      <a href="#!/register" ng-if="!checkUserLogin()" class="btn btn-outline-warning mx-3">
+   Register
+      </a>
+
+
+      <a ng-show="checkUserLogin()" href="#!/cart" class="btn btn-outline-secondary mx-5">
+        Cart <span>{{ userCartCount }}</span>
+  </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+    <div class="card mt-3">
+        <h2 class="text-center mt-2">Add Product</h2>
+        <div class="card-body d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <label class="mb-2" for="">Name Book</label>
+                    <input type="text" class="form-control" ng-model="productDetail.ten" readonly>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <label class="mb-2" for="">Price Book</label>
+                    <input type="text" class="form-control" ng-model="productDetail.gia" readonly>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <label class="mb-2" for="">Quantity</label>
+                    <input type="number" class="form-control" ng-model="productDetail.soLuong" readonly>
+                </div>
+
+                <div class="col-12 mt-2">
+                    <label class="mb-2" for="">Image Book</label>
+
+                    <div class="col-12 mt-2 mt-2 mb-2 mx-3" style="width: 300px; height: 200px;">
+                        <figure class="figure">
+                            <img src="../../src/dist/img/{{ productDetail.hinh }}" class="figure-img img-fluid rounded"
+                                alt="Please upload image" style="width: 300px; height: 200px;">
+                        </figure>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 mt-2">
+                    <label class="mb-2" for="">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        ng-model="productDetail.mota" readonly></textarea>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="#!/list-all" style="text-decoration: none;color: black;"><button
+                            class="btn btn-warning">Back to home</button></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

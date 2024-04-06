@@ -1,0 +1,284 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1",
+      "address": "Hà Nội",
+      "role": "admin",
+      "phone": "09999999",
+      "cart": []
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "1",
+      "address": "Hà Nội",
+      "role": "user",
+      "phone": "09999999",
+      "cart": []
+    },
+    {
+      "id": "4311",
+      "username": "hoangnam",
+      "password": "1",
+      "address": "hn",
+      "role": "user",
+      "phone": "0123456789",
+      "cart": []
+    },
+    {
+      "id": "7035",
+      "username": "namki",
+      "password": "1",
+      "address": "ha noi",
+      "role": "user",
+      "phone": "0123456666",
+      "cart": []
+    },
+    {
+      "id": "8109",
+      "username": "nam2",
+      "password": "1",
+      "address": "0123456666",
+      "role": "user",
+      "phone": "0123456789",
+      "cart": []
+    }
+  ],
+  "sach": [
+    {
+      "id": "1",
+      "ten": "Book Science",
+      "gia": "200000",
+      "mota": "Sách Khoa Học là một cuốn sách tổng hợp về các lĩnh vực khoa học tự nhiên, bao gồm vật lý, hóa học, sinh học, địa chất, thiên văn học,",
+      "soLuong": 20,
+      "hinh": "anh1.png"
+    },
+    {
+      "id": "2",
+      "ten": "Book History",
+      "gia": 20000,
+      "mota": "Sách Lịch Sử là một cuốn sách tổng hợp về các sự kiện lịch sử của nhân loại, từ thời tiền sử đến hiện đại. Cuốn sách cung cấp cho người đọc những kiến thức về quá khứ của nhân loại, giúp họ hiểu được cách thức phát triển của xã hội và văn hóa.",
+      "soLuong": 123,
+      "hinh": "anh2.jfif"
+    },
+    {
+      "id": "3",
+      "ten": "Book Javascrip",
+      "gia": 30000,
+      "hinh": "anh3.jfif",
+      "soLuong": 30,
+      "mota": "Sách JavaScript là một cuốn sách hướng dẫn về ngôn ngữ lập trình JavaScript. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về JavaScript, giúp họ bắt đầu học và sử dụng JavaScript."
+    },
+    {
+      "id": "4",
+      "ten": "Book Java",
+      "gia": 40000,
+      "hinh": "anh4.jfif",
+      "soLuong": 40,
+      "mota": "Sách Java là một cuốn sách hướng dẫn về ngôn ngữ lập trình Java. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về Java, giúp họ bắt đầu học và sử dụng Java."
+    },
+    {
+      "id": "5",
+      "ten": "Book C++",
+      "gia": 50000,
+      "hinh": "anh5.jfif",
+      "mota": "Sách C++ là một cuốn sách hướng dẫn về ngôn ngữ lập trình C++. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về C++, giúp họ bắt đầu học và sử dụng C++.",
+      "soLuong": 5
+    },
+    {
+      "id": "6",
+      "ten": "Book Angular",
+      "gia": 60000,
+      "hinh": "anh6.jfif",
+      "soLuong": 60,
+      "mota": "Sách Angular là một cuốn sách hướng dẫn về framework Angular. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về Angular, giúp họ bắt đầu học và sử dụng Angular."
+    },
+    {
+      "id": "7",
+      "ten": "Book Typescript",
+      "gia": 70000,
+      "hinh": "anh7.jfif",
+      "soLuong": 70,
+      "mota": "Sách Typescript là một cuốn sách hướng dẫn về ngôn ngữ lập trình Typescript. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về Typescript, giúp họ bắt đầu học và sử dụng Typescript."
+    },
+    {
+      "id": "8",
+      "ten": "Book ReactJS",
+      "gia": 80000,
+      "hinh": "anh7.jfif",
+      "soLuong": 80,
+      "mota": "Sách ReactJS là một cuốn sách hướng dẫn về framework ReactJS. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về ReactJS, giúp họ bắt đầu học và sử dụng ReactJS."
+    },
+    {
+      "id": "2697",
+      "ten": "Đạo Lý Làm Người",
+      "gia": "200000",
+      "mota": "Trong tự nhiên, ngay cả những việc khó nhọc nhất cũng có thể thực hiện một cách dễ dàng, thành tựu lớn lao xuất phát từ những hành động nhỏ. Người khôn ngoan đạt được thành công lớn nhờ biết chia nhỏ hành động của mình.",
+      "soLuong": 300,
+      "hinh": "images.jpg2024-4-5_21-25-25.png2024-4-6_0-39-26.png2024-4-6_0-43-53.png"
+    }
+  ],
+  "order_cart": [
+    {
+      "id": "2309",
+      "username": "admin",
+      "address": "Hà Nội",
+      "phone": "09999999",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "2",
+          "ten": "Book History",
+          "gia": 20000,
+          "mota": "Sách Lịch Sử là một cuốn sách tổng hợp về các sự kiện lịch sử của nhân loại, từ thời tiền sử đến hiện đại. Cuốn sách cung cấp cho người đọc những kiến thức về quá khứ của nhân loại, giúp họ hiểu được cách thức phát triển của xã hội và văn hóa.",
+          "soLuong": 1,
+          "hinh": "anh2.jfif"
+        }
+      ]
+    },
+    {
+      "id": "53",
+      "username": "hoangnam",
+      "address": "hn",
+      "phone": "0123456789",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "3",
+          "ten": "Book Javascrip",
+          "gia": 30000,
+          "hinh": "anh3.jfif",
+          "soLuong": 1,
+          "mota": "Sách JavaScript là một cuốn sách hướng dẫn về ngôn ngữ lập trình JavaScript. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về JavaScript, giúp họ bắt đầu học và sử dụng JavaScript."
+        }
+      ]
+    },
+    {
+      "id": "7791",
+      "username": "namki",
+      "address": "ha noi",
+      "phone": "0123456666",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "4",
+          "ten": "Book Java",
+          "gia": 40000,
+          "hinh": "anh4.jfif",
+          "soLuong": 1,
+          "mota": "Sách Java là một cuốn sách hướng dẫn về ngôn ngữ lập trình Java. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về Java, giúp họ bắt đầu học và sử dụng Java."
+        },
+        {
+          "id": "6",
+          "ten": "Book Angular",
+          "gia": 60000,
+          "hinh": "anh6.jfif",
+          "soLuong": 1,
+          "mota": "Sách Angular là một cuốn sách hướng dẫn về framework Angular. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về Angular, giúp họ bắt đầu học và sử dụng Angular."
+        },
+        {
+          "id": "5",
+          "ten": "Book C++",
+          "gia": 50000,
+          "hinh": "anh5.jfif",
+          "mota": "Sách C++ là một cuốn sách hướng dẫn về ngôn ngữ lập trình C++. Cuốn sách cung cấp cho người đọc những kiến thức cơ bản về C++, giúp họ bắt đầu học và sử dụng C++.",
+          "soLuong": 1
+        }
+      ]
+    },
+    {
+      "id": "276",
+      "username": "nam2",
+      "address": "0123456666",
+      "phone": "0123456789",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "1",
+          "ten": "Book Science",
+          "gia": "200000",
+          "mota": "Sách Khoa Học là một cuốn sách tổng hợp về các lĩnh vực khoa học tự nhiên, bao gồm vật lý, hóa học, sinh học, địa chất, thiên văn học,",
+          "soLuong": 1,
+          "hinh": "anh1.png"
+        }
+      ]
+    },
+    {
+      "id": "7176",
+      "username": "admin",
+      "address": "Hà Nội",
+      "phone": "09999999",
+      "statusName": "Pending",
+      "cart": [
+        {
+          "id": "7124",
+          "ten": "dao li lam nguoi",
+          "gia": "100.000",
+          "mota": "dạy cách làm người đừng như sơn luyến",
+          "hinh": "images.jpg2024-4-5_21-15-55.png",
+          "soLuong": 1
+        },
+        {
+          "id": "2",
+          "ten": "Book History",
+          "gia": 20000,
+          "mota": "Sách Lịch Sử là một cuốn sách tổng hợp về các sự kiện lịch sử của nhân loại, từ thời tiền sử đến hiện đại. Cuốn sách cung cấp cho người đọc những kiến thức về quá khứ của nhân loại, giúp họ hiểu được cách thức phát triển của xã hội và văn hóa.",
+          "soLuong": 1,
+          "hinh": "anh2.jfif"
+        }
+      ]
+    },
+    {
+      "id": "5266",
+      "username": "namki",
+      "address": "ha noi",
+      "phone": "0123456666",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "2",
+          "ten": "Book History",
+          "gia": 20000,
+          "mota": "Sách Lịch Sử là một cuốn sách tổng hợp về các sự kiện lịch sử của nhân loại, từ thời tiền sử đến hiện đại. Cuốn sách cung cấp cho người đọc những kiến thức về quá khứ của nhân loại, giúp họ hiểu được cách thức phát triển của xã hội và văn hóa.",
+          "soLuong": 1,
+          "hinh": "anh2.jfif"
+        },
+        {
+          "id": "1",
+          "ten": "Book Science",
+          "gia": "200000",
+          "mota": "Sách Khoa Học là một cuốn sách tổng hợp về các lĩnh vực khoa học tự nhiên, bao gồm vật lý, hóa học, sinh học, địa chất, thiên văn học,",
+          "soLuong": 1,
+          "hinh": "anh1.png"
+        },
+        {
+          "id": "2697",
+          "ten": "Đạo Lý Làm Người",
+          "gia": "200000",
+          "mota": "Trong tự nhiên, ngay cả những việc khó nhọc nhất cũng có thể thực hiện một cách dễ dàng, thành tựu lớn lao xuất phát từ những hành động nhỏ. Người khôn ngoan đạt được thành công lớn nhờ biết chia nhỏ hành động của mình.",
+          "hinh": "images.jpg2024-4-5_21-25-25.png2024-4-6_0-39-26.png2024-4-6_0-43-53.png",
+          "soLuong": 1
+        }
+      ]
+    },
+    {
+      "id": "3347",
+      "username": "admin",
+      "address": "Hà Nội",
+      "phone": "09999999",
+      "statusName": "Success",
+      "cart": [
+        {
+          "id": "2697",
+          "ten": "Đạo Lý Làm Người",
+          "gia": "200000",
+          "mota": "Trong tự nhiên, ngay cả những việc khó nhọc nhất cũng có thể thực hiện một cách dễ dàng, thành tựu lớn lao xuất phát từ những hành động nhỏ. Người khôn ngoan đạt được thành công lớn nhờ biết chia nhỏ hành động của mình.",
+          "hinh": "images.jpg2024-4-5_21-25-25.png2024-4-6_0-39-26.png2024-4-6_0-43-53.png",
+          "soLuong": 1
+        }
+      ]
+    }
+  ]
+}
